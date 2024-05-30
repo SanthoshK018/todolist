@@ -47,10 +47,10 @@ def openTaskfile():
         file.close()
 
 
-#icon
+#adding todlist icon
 Image_icon=PhotoImage(file='icon.png')
 root.iconphoto(False,Image_icon)
-#top bar
+#Header of the app
 TopImage=PhotoImage(file='topbar.png')
 Label(root,image=TopImage).pack()
 
@@ -92,7 +92,7 @@ scrollbar.config(command = listbox.yview)
 
 openTaskfile()
 
-#delete
+#Delete button
 Delete_icon = PhotoImage(file = 'delete.png')
 Button(root, image = Delete_icon, bd = 0, command = deleteTask).pack(side = BOTTOM, pady = 13)
 
